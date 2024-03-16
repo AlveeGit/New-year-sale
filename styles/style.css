@@ -1,0 +1,306 @@
+/* Common css */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+main,
+header,
+.footer-section {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.text-red {
+  color: red;
+}
+.section-title {
+  font-family: "Merriweather", serif;
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.section-description {
+  font-size: 20px;
+  color: #070211ab;
+}
+.btn-primary {
+  color: white;
+  background: none;
+  margin: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  cursor: pointer;
+}
+
+/* Banner section */
+.banner-section {
+  position: relative;
+  background: url("../images/Banner Image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 600px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+  border-radius: 15px;
+  z-index: 0;
+}
+.banner-greetings,
+.banner-title {
+  z-index: 1;
+}
+.banner-greetings {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.banner-title {
+  font-family: "Merriweather", serif;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+/* Discount section */
+.discount-percentage {
+  color: #ff0000;
+  font-size: 88px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+.discount-deals {
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: 600;
+}
+.discount-title {
+  font-size: 48px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+/* Welcome section */
+.welcome-section {
+  position: relative;
+  background-image: url("../images/Vectorrr.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 600px;
+  border-radius: 15px;
+  /* display: flex; */
+}
+.welcome-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border-radius: 15px;
+  z-index: 0;
+}
+.welcome-content-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  text-align: left;
+}
+.welcome-content {
+  width: 50%;
+  margin-left: 125px;
+}
+.welcome-text {
+  font-family: "Merriweather", serif;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-bottom: 25px;
+}
+.welcome-description {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.welcome-img {
+  margin-right: 130px;
+}
+
+/* Offer section */
+.offer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.offer-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.offer-soon h4,
+.gift-section h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.offer-img {
+  border: #ff0000 12px solid;
+  border-radius: 50%;
+  padding: 35px;
+}
+.offer-year h2 {
+  font-size: 48px;
+  font-weight: 800;
+}
+.offer-year p {
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+.offer-year img {
+  width: 140px;
+}
+
+/* Gift section */
+.gift-section {
+  text-align: left;
+}
+.gift-section p {
+  max-width: 60%;
+}
+.gift-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+  row-gap: 24px;
+}
+.gift-card {
+  width: 31%;
+  margin-bottom: 24px;
+  transition: transform 0.5s ease-in-out;
+}
+.gift-card img {
+  width: 100%;
+  height: 100%;
+}
+.gift-card:hover {
+  cursor: pointer;
+  transform: scale(1.05) rotate(-5deg);
+}
+
+/* Letter section */
+.letter-section {
+  background-color: #fff2f2;
+  height: 616px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.letter-section img {
+  width: 150px;
+  margin-bottom: 25px;
+}
+.letter-section p {
+  max-width: 70%;
+}
+.subscription {
+  margin: 50px;
+  display: flex;
+}
+.subscription input {
+  padding: 25px;
+  border-radius: 50px 0 0 50px;
+  margin: 0;
+  width: 400px;
+}
+.subscription input:hover,
+.subscription button:hover {
+  cursor: pointer;
+}
+.subscription input:focus {
+  outline: none;
+}
+.subscription input::placeholder {
+  color: #07021146;
+}
+.subscription button {
+  padding: 25px;
+  border-radius: 0 50px 50px 0;
+  background-color: red;
+  color: white;
+  margin: 0;
+  width: 200px;
+}
+
+/* Footer section */
+footer {
+  background-color: #070211;
+  color: white;
+  padding: 120px 140px;
+}
+.footer-section p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  line-height: 50px;
+}
+.icon {
+  margin-right: 16px;
+}
+.footer-social {
+  padding: 100px;
+}
+.social-item {
+  width: 64px;
+  margin-right: 24px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom button {
+  font-size: 24px !important;
+  font-weight: 400;
+}
