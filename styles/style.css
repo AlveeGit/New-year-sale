@@ -12,7 +12,7 @@ main,
 header,
 .footer-section {
   margin: 0 auto;
-  max-width: 1320px;
+  max-width: 70%;
 }
 section {
   margin-top: 50px;
@@ -259,6 +259,8 @@ section {
   color: #07021146;
 }
 .subscription button {
+  font-size: 20px;
+  font-weight: 500;
   padding: 25px;
   border-radius: 0 50px 50px 0;
   background-color: red;
